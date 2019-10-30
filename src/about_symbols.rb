@@ -24,7 +24,7 @@ class AboutSymbols < Neo::Koan
   end
 
   def test_method_names_become_symbols
-    symbols_as_strings = Symbol.all_symbols.map { |x| x.to_s }
+    symbols_as_strings = Symbol.all_symbols.map { |symbol| symbol.to_s }
     assert_equal __(true), symbols_as_strings.include?("test_method_names_become_symbols")
   end
 
